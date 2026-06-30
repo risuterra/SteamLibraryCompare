@@ -1,0 +1,24 @@
+Steam Library Compare
+
+Copyright © 2026 Risuterra. All rights reserved.
+
+Permission is granted to download and use unmodified official releases of
+Steam Library Compare for personal, non-commercial use.
+
+The software, source code, installer, documentation, artwork, and other
+included materials may not be copied, modified, redistributed, sublicensed,
+sold, or incorporated into another product without prior written permission
+from the copyright holder, except where a separate third-party license
+expressly permits otherwise.
+
+Steam Library Compare is an independent, unofficial application and is not
+affiliated with, endorsed by, or sponsored by Valve Corporation.
+
+Steam and the Steam logo are trademarks and/or registered trademarks of
+Valve Corporation in the United States and/or other countries.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF THE SOFTWARE.
