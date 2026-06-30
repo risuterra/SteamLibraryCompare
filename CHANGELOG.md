@@ -10,3 +10,7 @@
 ## V1.0.2 - 30 June 2026
 
 - Add tooltips to Results table on hover.
+
+## V1.0.3 - 30 Jun 2026
+
+- Add manual and automatic update checking.
