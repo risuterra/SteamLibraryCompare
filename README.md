@@ -75,12 +75,27 @@ Steam Library Compare can:
   - Price
   - Genres
   - Play modes and supported features
+  - Game / App name
 - Download localized Steam metadata
 - Download prices for a selected Steam store region
 - Cache metadata separately by language and region
 - Switch between supported interface languages
 - Use light or dark mode
 - Check for newer GitHub releases
+
+## Steam Web API Key
+
+Some Steam-related operations such as Scanning Library and Refreshing Metadata require a Steam Web API key.
+
+You can request a personal key from Steam's official Web API key page.
+
+When registering a personal key, you can use `localhost` as the domain name if you do not operate a public website.
+
+API Keys require a valid setup of Steam Guard on a mobile device.
+
+Never share your API key with anyone else.
+
+SLC does not need your Steam password at any time. SLC does not access or report any private or confidential account information at any time.
 
 ## Populating Your Library
 
@@ -124,7 +139,6 @@ Saved libraries may be:
 - Loaded
 - Renamed
 - Removed
-- Exported
 
 ## Loaded libraries
 
@@ -136,7 +150,7 @@ Use **Load All** or **Unload All** to quickly change which saved libraries are a
 
 ## Exporting Libraries
 
-Use **Export Library Results** to save the current filtered result set.
+Use **Save Results** to save the current filtered result set.
 
 Exporting is useful for:
 
@@ -146,15 +160,7 @@ Exporting is useful for:
 - Moving library data to another computer
 - Reusing a filtered subset
 - Comparing results later
-
-Depending on the selected export format, exported data may include:
-
-- App IDs
-- Game names
-- Metadata
-- Filter-relevant information
-- Regional price information
-- Library identity and contributor information
+- Saving results as a new library
 
 Keep exported files private if they contain information you do not want to share.
 
@@ -171,6 +177,10 @@ Typical uses include:
 - Reviewing the intersection between several exported libraries
 
 When importing older data, metadata may be refreshed if it is missing, stale, or stored for a different language or region.
+
+Libraries can be imported via the "+" button to import via code or `.slc` file. `.slc` files can also be dragged directly into the app. If `.slc` files are associated with Steam Library Compare, then `.slc` files can be opened directly to open the app and import them.
+
+If an imported file would result in an overwrite of an existing library, it will ask for a confirmation first.
 
 ## Searching Results
 
@@ -217,40 +227,15 @@ A metadata cache is considered "recent" for approximately seven days and will wa
 
 When changing the selected language or store region, the app checks whether a complete recent cache exists for that exact combination and tries to load that data, if it exists. If a complete cache is unavailable, the app may ask you to refresh metadata.
 
-### Refresh All
+When refreshing metadata, you have options between:
 
-This option downloads metadata again for **all** available games in the current result set or library set.
+- All libraries
+- Only Loaded Libraries
+- Current Results View
+- Metadata older than one week
+- Metadata of any age
 
-Use this when:
-
-- You suspect cached data is incomplete
-- Steam metadata has changed
-- You want to replace all cached values
-- You changed your language/store region and want a complete clean refresh
-
-### Refresh Needed
-
-Downloads only metadata that is:
-
-- Missing
-- Older than the cache lifetime
-- Unavailable for the current language/store region
-
-This is usually faster and is useful after an interrupted refresh.
-
-Steam request limits and practical pacing may mean that only around 250 games can be updated per five minutes. This means that if you had for example 800 games, it would take roughly 15 minutes for the app to download metadata. Refreshed data is considered "recent" for up to a week without need for a new refresh.
-
-## Steam Web API Key
-
-Some Steam-related operations may require a Steam Web API key.
-
-You can request a personal key from Steam's official Web API key page.
-
-When registering a personal key, you can use `localhost` as the domain name if you do not operate a public website.
-
-Never share your API key with anyone else.
-
-SLC does not need your Steam password at any time. SLC does not access or report any private or confidential account information at any time.
+If metadata is refreshed and titles are found with no store page, they may be marked as such to exclude them from future metadata refreshes.
 
 ## Languages
 
@@ -292,7 +277,7 @@ To completely reset the SLC and all saved settings, uninstall it and manually de
 
 ## Privacy
 
-Steam Library Compare does not operate an analytics service.
+Steam Library Compare does not operate an analytics service. Steam Library Compare does not collect any data about personal identity, email, real user identity, passwords, friends list, or other private information.
 
 The application may communicate directly with Steam services and GitHub for:
 
@@ -309,7 +294,7 @@ Steam Library Compare is an independent, unofficial application and is not affil
 
 ## License
 
-A separate copy of this license is also included as: `LICENSES\SteamLibraryCompare-LICENSE.txt`
+A separate copy of this license is also included as: `LICENSE.txt`
 
 Copyright © 2026 Risuterra. All rights reserved.
 
