@@ -19,14 +19,14 @@
 
 - Refactored export file/code format to only store necessary information, retains reverse compatibility for earlier import versions.
 - Library names no longer need to be unique, distinctions are made by the user IDs and filters now instead of names.
-- Importing files bases a default name on Steam display name and filters present now instad of what the library name was exported as.
+- Importing files bases a default name on Steam display name and filters present now instead of what the library name was exported as.
 - Import conflicts allow option to overwrite existing import.
 - `.slc` files are now associated with the app and will launch the app to import when opened.
 - Dragging `.slc` files into the app initiates import.
 - Duplicate instances of the app should be disallowed.
 - CSV import has been removed. CSV export still remains as an option.
 - Added safeguards for Steam not running, no detected Steam account login, failures in scanning, detecting less games than a prior scan, etc.
-- Failures to request metadata allow several additioanl retries before cancelling operation.
+- Failures to request metadata allow several additional retries before cancelling operation.
   - Partial failures retain information instead of discarding it due to the failure.
 - Logic to handle delisted/unlisted Steam games.
 - More control over how much metadata to download at once based on loaded libraries/filters.
